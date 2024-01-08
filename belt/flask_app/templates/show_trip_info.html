@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Dashboard</title>
+</head>
+
+<div class="col-4 mx-auto text-center border border-dark mt-4 p-3 bg-info">
+    <h3>Destination: {{show.destination}}</h3>
+    <h3>Your Plans:{{show.plan}}</h3>
+    <p>Created at:{{show.created_at.strftime("%b %d %Y")}}</p>
+    <p>Updated at:{{show.updated_at.strftime("%b %d %Y")}}</p>
+    <p>Start Date:{{show.start_date.strftime("%b %d %Y")}}</p>
+    <p>End Date: {{show.end_date.strftime("%b %d %Y")}}</p>
+</div>
+
+<a href="/dashboard" class="m-3">Back to Dashboard</a>| <a href="/logout">Logout</a>
